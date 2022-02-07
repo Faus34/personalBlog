@@ -1,3 +1,7 @@
+:root {
+  --pale-green: #47cfac;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -25,7 +29,7 @@ header .header-icons-container {
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: #47cfac;
+  background-color: var(--pale-green);
 }
 
 header .header-icons-container .icons {
@@ -68,4 +72,31 @@ nav .profile-link {
 nav .profile-link a {
   color: black;
   border-bottom: 1px solid black;
+}
+
+main {
+  font-family: monospace;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/Cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+main .main-title {
+  color: white;
+  letter-spacing: 10px;
+  font-size: 40px;
+  padding-top: 15rem;
+}
+
+main .main-action-button {
+  height: 50px;
+  background-color: var(--pale-green);
+  width: 120px;
+  margin: 50px auto;
+  color: black;
+  font-weight: bold;
 }
