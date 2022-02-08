@@ -2,6 +2,7 @@
 
 :root {
   --pale-green: #47cfac;
+  --soft-grey: #e6e9ed;
 }
 
 body {
@@ -115,4 +116,35 @@ nav .profile-link a {
 .home-main-button a {
   font-weight: 700;
   font-size: 18px;
+}
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  background-color: var(--soft-grey);
+  padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+  grid-column: 1;
+}
+
+.blogs-news-img-container img {
+  width: 100%;
+}
+
+.blogs-news-info-container {
+  grid-column: 2;
+}
+
+.blogs-news.info-container p {
+  margin-bottom: 35px;
 }
